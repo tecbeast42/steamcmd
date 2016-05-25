@@ -12,5 +12,6 @@ RUN mkdir -p /opt/steamcmd &&\
 
 WORKDIR /opt/steamcmd
 
-# This container will be executable
-ENTRYPOINT ["./steamcmd.sh"]
+RUN ./steamcmd.sh +login anonymous +app_update 294420 validate +quit
+# +force_install_dir ../7days
+WORKDIR /root/Steam/steamapps/common/7 Days to Die Dedicated Server
