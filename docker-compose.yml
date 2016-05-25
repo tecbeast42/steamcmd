@@ -2,4 +2,8 @@ version: '2'
 services:
     steam:
         build: ./steam
+        ports:
+            - "26900:26900"
+        entrypoint:
+            "./startserver.sh -configfile=serverconfig.xml"
 
