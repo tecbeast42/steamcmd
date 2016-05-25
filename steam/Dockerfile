@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y wget curl vim nano lib32gcc1 ca-certifi
 
 RUN mkdir -p /opt/steamcmd &&\
     cd /opt/steamcmd &&\
-    curl -s http://media.steampowered.com/installer/steamcmd_linux.tar.gz | tar -vxz
+    curl -s https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz | tar -vxz
 
 
 WORKDIR /opt/steamcmd
