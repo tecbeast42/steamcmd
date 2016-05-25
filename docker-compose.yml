@@ -6,4 +6,5 @@ services:
             - "26900:26900"
         entrypoint:
             "./startserver.sh -configfile=serverconfig.xml"
-
+        dns:
+          - 8.8.8.8
